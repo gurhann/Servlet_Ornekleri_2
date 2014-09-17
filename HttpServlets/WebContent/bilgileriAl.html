@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>Lütfen Bilgilerinizi giriniz</h3>
+	<form method="post" action="/HttpServlets/yonlendiriciServlet">
+		<table border="1">
+			<tr>
+				<td>Adınız : </td>
+				<td><input type="text" name="ad" /></td>
+			</tr>
+			<tr>
+				<td>Soyadınız : </td>
+				<td><input type="text" name="soyad" /></td>
+			</tr>
+			<tr>
+				<td>Öğrenim Derecesi : </td>
+				<td>
+					<input type="radio" name="ogrenim" value="önlisans" />Ön Lisans<br />
+					<input type="radio" name="ogrenim" value="lisans" />Lisans<br />
+					<input type="radio" name="ogrenim" value="yüksek_lisans" />Yüksek Lisans<br />
+					<input type="radio" name="ogrenim" value="doktora" />Doktora <br />
+				</td>
+			</tr>
+			<tr>
+				<td>Bilinen Programlama Dilleri : </td>
+				<td>
+					<input type="checkbox" name="programlama_dilleri" value="java" />Java <br />
+					<input type="checkbox" name="programlama_dilleri" value="php" />PHP <br />
+					<input type="checkbox" name="programlama_dilleri" value="c#" />C# <br />
+					<input type="checkbox" name="programlama_dilleri" value="python" />Python <br />
+					<input type="checkbox" name="programlama_dilleri" value="c" />C <br />
+				</td>
+			</tr>
+			<tr >
+				<td colspan="2"><input type="submit" name="gonder" value="Gönder"/></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
